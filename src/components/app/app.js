@@ -9,6 +9,11 @@ import "./app.css";
 
 
 export default function App() {
+   const data =[
+      {name: "Alex", salary :1153, increase:false},
+      {name: "Tom", salary :800, increase:true},
+      {name: "victor", salary :450, increase:false}
+   ];
    return (
 <div className="app">
 
@@ -18,7 +23,7 @@ export default function App() {
          <AppFilter />
       </div>
     
-      <EmployeesList/>
+      <EmployeesList data ={data}/>
       <EmployeesAddForm/>
    </div>
    )
